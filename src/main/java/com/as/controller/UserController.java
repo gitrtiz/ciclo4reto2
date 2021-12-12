@@ -53,7 +53,7 @@ public class UserController {
         return servicio.delete(id);
     }
     
-    @GetMapping("/{emailexist}")
+    @GetMapping("emailexist/{email}")
     public boolean existeEmail(@PathVariable("email") String email) {
         if (servicio.existeEmail(email) != true) {
             return false;
