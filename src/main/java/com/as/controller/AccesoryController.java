@@ -45,12 +45,7 @@ public class AccesoryController {
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public boolean delete(@PathVariable("id") String reference) {
-        if (servicio.delete(reference) != true) {
-            return false;
-        }
-        else {
-          return true;  
-        }   
+        return servicio.delete(reference); 
     }
     
 }

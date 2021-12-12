@@ -55,7 +55,12 @@ public class UserController {
     
     @GetMapping("/{emailexist}")
     public boolean existeEmail(@PathVariable("email") String email) {
-        return servicio.existeEmail(email);
+        if (servicio.existeEmail(email) != true) {
+            return false;
+        }
+        else {
+            return true;
+        } 
     }
     
 }

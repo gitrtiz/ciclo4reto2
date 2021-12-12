@@ -43,6 +43,9 @@ public class AccesoryService {
                 if (accesorio.getDescription()!=null) {
                     g.get().setDescription(accesorio.getDescription());
                 }
+                if (accesorio.isAvailability() != g.get().isAvailability()) {
+                    g.get().setAvailability(accesorio.isAvailability());
+                }
                 if (accesorio.getBrand()!=null) {
                     g.get().setBrand(accesorio.getBrand());
                 }
