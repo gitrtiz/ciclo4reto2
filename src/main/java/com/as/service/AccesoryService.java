@@ -52,6 +52,12 @@ public class AccesoryService {
                 if (accesorio.getMaterial()!=null) {
                     g.get().setMaterial(accesorio.getMaterial());
                 }
+                if (accesorio.getPrice() != g.get().getPrice()) {
+                    g.get().setPrice(accesorio.getPrice());
+                }
+                if (accesorio.getQuantity() != g.get().getQuantity()) {
+                    g.get().setQuantity(accesorio.getQuantity());
+                }
                 if (accesorio.getPhotography()!=null) {
                     g.get().setPhotography(accesorio.getPhotography());
                 }
