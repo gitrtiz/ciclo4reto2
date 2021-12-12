@@ -60,9 +60,6 @@ public class UserService {
                 if (usuario.getAddress()!=null) {
                     g.get().setAddress(usuario.getAddress());
                 }
-                if (usuario.getBirthtDay()!=null) {
-                    g.get().setBirthtDay(usuario.getBirthtDay());
-                }
                 if (usuario.getCellPhone()!=null) {
                     g.get().setCellPhone(usuario.getCellPhone());
                 }
@@ -71,9 +68,6 @@ public class UserService {
                 }
                 if (usuario.getIdentification()!=null) {
                     g.get().setIdentification(usuario.getIdentification());
-                }
-                if (usuario.getMonthBirthtDay()!=null) {
-                    g.get().setMonthBirthtDay(usuario.getMonthBirthtDay());
                 }
                 if (usuario.getName()!=null) {
                     g.get().setName(usuario.getName());
