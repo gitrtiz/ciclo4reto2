@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
  * @author Edgar
  */
 @RestController
-@RequestMapping("/api/accesory")
+@RequestMapping("/api/accessory")
 public class AccesoryController {
    @Autowired
    private AccesoryService servicio;
